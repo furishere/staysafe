@@ -1,9 +1,9 @@
-# Staysafe — Cybercrime Awareness & Prevention
+# Staysafe, Cybercrime Awareness & Prevention
 
 A plain-language awareness site that teaches people to recognize common cybercrime
 (phishing, SIM swap, UPI fraud, ransomware, and more), spot the red flags in the moment,
 and know exactly what to do if something goes wrong. Built as a single-page site with
-plain HTML, CSS, and JavaScript — no build tools or dependencies required.
+plain HTML, CSS, and JavaScript, no build tools or dependencies required.
 
 ## Structure
 
@@ -20,10 +20,10 @@ plain HTML, CSS, and JavaScript — no build tools or dependencies required.
 The site is a single HTML page divided into four sections, switched client-side by
 `script.js` (no page reloads, no router):
 
-- **Home** — hero, a simulated "live" incident feed, and an overview of what the guide covers
-- **Learn** — common cybercrime types grouped by severity (Critical / Common / Watch)
-- **Spot the Scam** — universal red flags and a quick self-check before you click, tap, or pay
-- **How to Report** — a four-step response process plus India-specific reporting contacts
+- **Home** - hero, a simulated "live" incident feed, and an overview of what the guide covers
+- **Learn** - common cybercrime types grouped by severity (Critical / Common / Watch)
+- **Spot the Scam** - universal red flags and a quick self-check before you click, tap, or pay
+- **How to Report** - a four-step response process plus India-specific reporting contacts
   (1930 national cybercrime helpline, cybercrime.gov.in)
 
 ## Running it
@@ -39,10 +39,10 @@ HTML links to the other two by relative path.
 
 ## Design
 
-- **Palette** — near-black background, warm cream text, green accent, with amber/red used
+- **Palette** - near-black background, warm cream text, green accent, with amber/red used
   sparingly to signal caution and critical severity
-- **Type** — Instrument Serif for headings, JetBrains Mono for labels and data, Inter for body copy
-- **Responsive** — fluid down to phone width; the navbar collapses into a hamburger menu below 760px
+- **Type** - Instrument Serif for headings, JetBrains Mono for labels and data, Inter for body copy
+- **Responsive** - fluid down to phone width; the navbar collapses into a hamburger menu below 760px
 
 ## Customizing content
 
