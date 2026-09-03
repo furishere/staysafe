@@ -1,0 +1,247 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Staysafe </title>
+<meta name="description" content="A plain-language guide to recognizing phishing, SIM swap, UPI fraud, ransomware and other everyday cybercrime — and what to do if it happens to you." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#" data-nav="home"><span class="accent">&gt;</span> staysafe<span class="dim">.digital</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main" id="main-nav">
+      <a data-nav="home" class="active">Home</a>
+      <a data-nav="learn">Learn</a>
+      <a data-nav="spot">Spot the Scam</a>
+      <a data-nav="report">How to Report</a>
+    </nav>
+  </div>
+</header>
+ 
+<main class="wrap">
+ 
+  <!-- HOME -->
+  <section class="page active" id="home">
+    <h1>Cybercrime doesn't wait for<br>you to be ready.</h1>
+    <p class="lede">A plain-language guide to recognizing scams the moment they happen, not after the money's gone. No jargon, no fear-mongering, just what to actually look for and what to do next.</p>
+    <div class="cta-row">
+      <a class="btn primary" data-nav="spot">Learn to spot a scam</a>
+      <a class="btn" data-nav="report">What to do if it happens</a>
+    </div>
+ 
+    <div class="terminal" id="terminal">
+      <div class="terminal-head">
+        <span>incident-feed.log &mdash; anonymized, illustrative</span>
+        <span class="live-dot"><i></i>live</span>
+      </div>
+      <div class="terminal-body" id="terminal-body"></div>
+    </div>
+ 
+    <h2>What this guide covers</h2>
+    <div class="cols3">
+      <div class="who-item">
+        <h3>Recognize it</h3>
+        <p>The specific red flags in a message, call, or QR code that separate a scam from a routine request, before you tap anything.</p>
+      </div>
+      <div class="who-item">
+        <h3>Prevent it</h3>
+        <p>Simple habits for accounts, devices, and payment apps that close the doors attackers rely on most.</p>
+      </div>
+      <div class="who-item">
+        <h3>Respond to it</h3>
+        <p>What to do in the first hour after something goes wrong, who to call, what to freeze, what to save as evidence.</p>
+      </div>
+    </div>
+ 
+    <h2 class="mt-lg">Who this is for</h2>
+    <div class="cols2">
+      <div class="who-item"><p><b class="text-strong">Families &amp; individuals</b> <br>everyday targets of phishing, UPI fraud, and SIM swap, usually with no one to ask before it's too late.</p></div>
+      <div class="who-item"><p><b class="text-strong">Students &amp; young adults</b> <br> heavy social and messaging use, prime targets for job scams and account takeover.</p></div>
+      <div class="who-item"><p><b class="text-strong">Small teams &amp; shops</b> <br> no dedicated security staff, but real exposure through email, invoicing, and shared devices.</p></div>
+      <div class="who-item"><p><b class="text-strong">Community &amp; senior groups</b> <br> frequent targets of voice-based and impersonation scams, taught in plain language.</p></div>
+    </div>
+  </section>
+ 
+  <!-- LEARN -->
+  <section class="page" id="learn">
+    <h2>Common types of cybercrime</h2>
+    <p class="lede">A working reference for the scams that cause the most damage, grouped by severity, not by how common they are.</p>
+ 
+    <div class="severity-group">
+      <div class="severity-label"><span class="severity-dot critical"></span>CRITICAL &mdash; acts fast, hard to reverse</div>
+      <div class="case-grid">
+        <div class="case">
+          <h3>SIM swap</h3>
+          <p>Your number is ported to a new SIM using forged ID, giving the attacker your OTPs and calls.</p>
+          <div class="flag"><b>Red flag:</b> sudden total loss of signal with no explanation.</div>
+        </div>
+        <div class="case">
+          <h3>Ransomware</h3>
+          <p>Files are silently encrypted, often through a malicious attachment or macro, then held for payment.</p>
+          <div class="flag"><b>Red flag:</b> an "enable content" prompt on a file you weren't expecting.</div>
+        </div>
+        <div class="case">
+          <h3>Deepfake voice scams</h3>
+          <p>A cloned voice of a relative or executive requests urgent funds, timed to prevent verification.</p>
+          <div class="flag"><b>Red flag:</b> urgency paired with a request to keep it quiet.</div>
+        </div>
+        <div class="case">
+          <h3>Business email compromise</h3>
+          <p>An invoice thread is quietly hijacked and bank details are swapped mid-conversation.</p>
+          <div class="flag"><b>Red flag:</b> a last-minute change to payment details.</div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="severity-group">
+      <div class="severity-label"><span class="severity-dot caution"></span>COMMON &mdash; high volume, preventable</div>
+      <div class="case-grid">
+        <div class="case">
+          <h3>Phishing messages</h3>
+          <p>A spoofed bank or delivery message pushes you to a fake login page under time pressure.</p>
+          <div class="flag"><b>Red flag:</b> a link that doesn't match the sender's real domain.</div>
+        </div>
+        <div class="case">
+          <h3>UPI / QR fraud</h3>
+          <p>A "collect" request or altered QR code is disguised as a payment you're supposed to receive.</p>
+          <div class="flag"><b>Red flag:</b> entering a PIN to receive money — you never need to.</div>
+        </div>
+        <div class="case">
+          <h3>Job &amp; task scams</h3>
+          <p>A too-good offer requests a small "registration" or "activation" fee upfront.</p>
+          <div class="flag"><b>Red flag:</b> any legitimate job that asks you to pay first.</div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="severity-group">
+      <div class="severity-label"><span class="severity-dot watch"></span>WATCH &mdash; quieter, compounds over time</div>
+      <div class="case-grid">
+        <div class="case">
+          <h3>Credential stuffing</h3>
+          <p>A password reused across sites resurfaces in a breach dump and is tried everywhere else you use it.</p>
+          <div class="flag"><b>Red flag:</b> a login alert from a service you haven't used in months.</div>
+        </div>
+        <div class="case">
+          <h3>Fake tech support</h3>
+          <p>A pop-up or cold call convinces you to install remote-access software "to fix" a problem you don't have.</p>
+          <div class="flag"><b>Red flag:</b> anyone asking to remote into your device unprompted.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- SPOT THE SCAM -->
+  <section class="page" id="spot">
+    <h2>How to spot a scam in the moment</h2>
+    <p class="lede">Most scams share the same handful of tells, no matter what channel they arrive through. Learn these and you'll catch the majority of attempts before they go further.</p>
+ 
+    <div class="check-grid">
+      <div class="check">
+        <h3>Manufactured urgency</h3>
+        <p>"Act now or lose access" is a pressure tactic, not a real deadline. Genuine institutions rarely demand instant action.</p>
+      </div>
+      <div class="check">
+        <h3>Unusual payment requests</h3>
+        <p>Being asked to pay via gift cards, crypto, or a "collect" UPI request is a near-certain sign of fraud.</p>
+      </div>
+      <div class="check">
+        <h3>Mismatched sender details</h3>
+        <p>Check the actual email address or link domain, not just the display name — spoofing the name is trivial.</p>
+      </div>
+      <div class="check">
+        <h3>Requests to keep it secret</h3>
+        <p>Being told not to tell family, colleagues, or your bank is designed to stop you from getting a second opinion.</p>
+      </div>
+      <div class="check">
+        <h3>Too good to be true</h3>
+        <p>Unusually high returns, easy money, or a job that pays well for almost no work is bait, not opportunity.</p>
+      </div>
+      <div class="check">
+        <h3>Unsolicited remote access</h3>
+        <p>No legitimate support team will ask to remotely control your device out of nowhere.</p>
+      </div>
+    </div>
+ 
+    <h2 class="mt-lg">Before you click, tap, or pay — ask</h2>
+    <div class="cols2">
+      <div class="who-item"><p><b class="text-strong">Did I initiate this?</b> <br> If you didn't start the interaction, treat any request for money or information with suspicion.</p></div>
+      <div class="who-item"><p><b class="text-strong">Can I verify independently?</b> <br> Call the organization back using a number you look up yourself, not one given in the message.</p></div>
+      <div class="who-item"><p><b class="text-strong">Would they really ask this way?</b> <br> Banks and government bodies don't request OTPs, PINs, or passwords over call or chat.</p></div>
+      <div class="who-item"><p><b class="text-strong">What happens if I wait?</b> <br> If pausing to check would "ruin" the deal, the deal was never real.</p></div>
+    </div>
+  </section>
+ 
+  <!-- HOW TO REPORT -->
+  <section class="page" id="report">
+    <h2>What to do if it happens to you</h2>
+    <p class="lede">Acting quickly matters, the faster a fraudulent transaction is reported, the better the chance of getting funds frozen before they move further.</p>
+ 
+    <div class="module">
+      <div class="module-num">01</div>
+      <div>
+        <h3>Stop and disconnect</h3>
+        <p>End the call, close the page, or disconnect the device from the internet if malware or remote access is involved. Don't make any further payments while things are unclear.</p>
+      </div>
+    </div>
+    <div class="module">
+      <div class="module-num">02</div>
+      <div>
+        <h3>Preserve the evidence</h3>
+        <p>Screenshot the messages, note the phone number or account involved, and save transaction IDs or reference numbers. Don't delete anything, even if it's unsettling to look at.</p>
+      </div>
+    </div>
+    <div class="module">
+      <div class="module-num">03</div>
+      <div>
+        <h3>Report it immediately</h3>
+        <p>Call the national cybercrime helpline or file a report on the portal below. For financial fraud, also alert your bank's fraud line directly so they can flag the transaction.</p>
+      </div>
+    </div>
+    <div class="module">
+      <div class="module-num">04</div>
+      <div>
+        <h3>Secure what's left</h3>
+        <p>Change passwords on any related accounts, enable two-factor authentication, and keep an eye on statements for follow-up attempts — a first scam is often followed by others.</p>
+      </div>
+    </div>
+ 
+    <h2 class="mt-lg">Where to report — India</h2>
+    <div class="report-box">
+      <div class="report-item">
+        <span class="report-label">National Cybercrime Helpline</span>
+        <span class="report-value">1930</span>
+      </div>
+      <div class="report-item">
+        <span class="report-label">Online Reporting Portal</span>
+        <span class="report-value">cybercrime.gov.in</span>
+      </div>
+      <div class="report-item">
+        <span class="report-label">Local Police</span>
+        <span class="report-value">File an FIR at your nearest station or cyber cell</span>
+      </div>
+    </div>
+  </section>
+ 
+</main>
+ 
+<footer class="site">
+  <div class="wrap">
+    <span>Staysafe &mdash; a plain-language cybercrime awareness resource.</span>
+    <span>Facing an active incident? Report at cybercrime.gov.in or call 1930.</span>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
