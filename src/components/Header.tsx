@@ -18,9 +18,10 @@ export default function Header({ page, menuOpen, onNavigate, onToggleMenu }: Pro
   return (
     <header className="site">
       <div className="wrap">
+        {/* Logo stays in the same tab */}
         <a
           className="logo"
-          href="#"
+          href="#home"
           onClick={(e) => {
             e.preventDefault()
             onNavigate('home')
@@ -40,15 +41,15 @@ export default function Header({ page, menuOpen, onNavigate, onToggleMenu }: Pro
           <span></span>
           <span></span>
         </button>
+        {/* Nav links open each section in a new tab. No onClick/preventDefault, so the browser handles it. */}
         <nav className={`main${menuOpen ? ' open' : ''}`} id="main-nav">
           {links.map((l) => (
             <a
               key={l.id}
+              href={`#${l.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className={page === l.id ? 'active' : undefined}
-              onClick={(e) => {
-                e.preventDefault()
-                onNavigate(l.id)
-              }}
             >
               {l.label}
             </a>

@@ -8,29 +8,43 @@ import Report from './pages/Report'
 
 export type PageId = 'home' | 'learn' | 'spot' | 'report'
 
+const ids: PageId[] = ['home', 'learn', 'spot', 'report']
+
+function fromHash(): PageId {
+  const h = window.location.hash.slice(1) as PageId
+  return ids.includes(h) ? h : 'home'
+}
+
 export default function App() {
-  const [page, setPage] = useState<PageId>('home')
+  const [page, setPage] = useState<PageId>(fromHash)
   const [menuOpen, setMenuOpen] = useState(false)
 
   function navigate(id: PageId) {
-    setPage(id)
+    window.location.hash = id // updates URL; hashchange listener updates the page
     setMenuOpen(false)
     window.scrollTo(0, 0)
   }
 
   useEffect(() => {
+    const onHash = () => {
+      setPage(fromHash())
+      window.scrollTo(0, 0)
+    }
     const onResize = () => {
       if (window.innerWidth > 760) setMenuOpen(false)
     }
+    window.addEventListener('hashchange', onHash)
     window.addEventListener('resize', onResize)
-    return () => window.removeEventListener('resize', onResize)
+    return () => {
+      window.removeEventListener('hashchange', onHash)
+      window.removeEventListener('resize', onResize)
+    }
   }, [])
 
   return (
     <>
       <Header page={page} menuOpen={menuOpen} onNavigate={navigate} onToggleMenu={() => setMenuOpen((o) => !o)} />
       <main className="wrap">
-        {/* All sections stay mounted (hidden via CSS), same as the original, so the feed doesn't restart */}
         <Home active={page === 'home'} onNavigate={navigate} />
         <Learn active={page === 'learn'} />
         <Spot active={page === 'spot'} />
