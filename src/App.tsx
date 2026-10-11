@@ -5,10 +5,11 @@ import Home from './pages/Home'
 import Learn from './pages/Learn'
 import Spot from './pages/Spot'
 import Report from './pages/Report'
+import Play from './pages/Play'
 
-export type PageId = 'home' | 'learn' | 'spot' | 'report'
+export type PageId = 'home' | 'learn' | 'spot' | 'play' | 'report'
 
-const ids: PageId[] = ['home', 'learn', 'spot', 'report']
+const ids: PageId[] = ['home', 'learn', 'spot', 'play', 'report']
 
 function fromHash(): PageId {
   const h = window.location.hash.slice(1) as PageId
@@ -48,6 +49,7 @@ export default function App() {
         <Home active={page === 'home'} onNavigate={navigate} />
         <Learn active={page === 'learn'} />
         <Spot active={page === 'spot'} />
+        <Play active={page === 'play'} onNavigate={navigate} />
         <Report active={page === 'report'} />
       </main>
       <Footer />

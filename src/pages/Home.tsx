@@ -29,6 +29,9 @@ export default function Home({ active, onNavigate }: { active: boolean; onNaviga
         <a className="btn primary" onClick={go('spot')}>
           Learn to spot a scam
         </a>
+        <a className="btn" onClick={go('play')}>
+          Test yourself
+        </a>
         <a className="btn" onClick={go('report')}>
           What to do if it happens
         </a>

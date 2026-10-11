@@ -11,6 +11,7 @@ const links: { id: PageId; label: string }[] = [
   { id: 'home', label: 'Home' },
   { id: 'learn', label: 'Learn' },
   { id: 'spot', label: 'Spot the Scam' },
+  { id: 'play', label: 'Play' },
   { id: 'report', label: 'How to Report' },
 ]
 
